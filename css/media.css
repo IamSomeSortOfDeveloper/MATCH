@@ -161,7 +161,7 @@
     .box-1 {
         grid-row: 1 / 1;
         grid-column: 1 /1;
-        background-image: url(img/1.png);
+        background-image: url(/MATCH/img/1.png);
         background-repeat: no-repeat;
         background-size: initial;
         background-position: 75% 115%;
@@ -169,7 +169,7 @@
     .box-2 {
         grid-row: 2 / 2;
         grid-column: 2 /2;
-        background-image: url(img/2.png);
+        background-image: url(/MATCH/img/2.png);
         background-repeat: no-repeat;
         background-size: initial;
         background-position: 90% 110%;
@@ -177,7 +177,7 @@
     .box-3 {
         grid-row: 3 /3;
         grid-column: 1 /1;
-        background-image: url(img/3.png);
+        background-image: url(/MATCH/img/3.png);
         background-repeat: no-repeat;
         background-size: initial;
         background-position: 90% 110%;
@@ -189,7 +189,7 @@
     .box-5 {
         grid-row: 4 /4;
         grid-column: 2 / 2;
-        background-image: url(img/4.png);
+        background-image: url(/MATCH/img/4.png);
         background-repeat: no-repeat;
         background-size: initial;
         background-position: 90% 110%;
@@ -213,14 +213,14 @@
 
     .advert {
         padding: 100px 0 100px 0;
-        background-image: url(img/advertreversebackground.png);
+        background-image: url(/MATCH/img/advertreversebackground.png);
         background-position: right 60%;
         background-size: initial;
         background-repeat: no-repeat;
     }
 
     .forwomen__advert {
-        background-image: url(img/forwomanadvert320.png);
+        background-image: url(/MATCH/img/forwomanadvert320.png);
         background-position: right 60%;
         background-size: initial;
         background-repeat: no-repeat;
@@ -229,14 +229,14 @@
     .advert .container {
         display: flex;
         flex-direction: column;
-        background-image: url(img/WOMANVERT.png);
+        background-image: url(/MATCH/img/WOMANVERT.png);
         background-position: left center;
         background-size: initial;
         background-repeat: no-repeat;
     }
 
     .advert .forwomen__advert--container {
-        background-image: url(img/manstrong320.png);
+        background-image: url(/MATCH/img/manstrong320.png);
         background-position: left center;
         background-size: initial;
         background-repeat: no-repeat;
@@ -391,23 +391,23 @@
 
         .contact {
             padding: 100px 0 100px 0;
-            background: url(img/formgbleft320.png),
-            url(img/formbgright320.png);
+            background: url(/MATCH/img/formgbleft320.png),
+            url(/MATCH/img/formbgright320.png);
             background-position: left top,
             right bottom;
             background-repeat: no-repeat, no-repeat;
         }
 
         .forwomen__contact {
-            background: url(img/forwomancontactleft320.png),
-            url(img/forwomancontactright320.png);
+            background: url(/MATCH/img/forwomancontactleft320.png),
+            url(/MATCH/img/forwomancontactright320.png);
             background-position: left top,
             right bottom;
             background-repeat: no-repeat, no-repeat;
         }
 
         .contact .container {
-            background-image: url(img/CONTACTvertical.png);
+            background-image: url(/MATCH/img/CONTACTvertical.png);
             background-position: left bottom;
             background-repeat: no-repeat;
             background-size: initial;
@@ -501,7 +501,7 @@
 
         .footer {
         padding: 50px 0 200px 0;
-        background-image: url(img/MATCH320.png);
+        background-image: url(/MATCH/img/MATCH320.png);
         background-position: bottom center; 
         background-size: initial;
         background-repeat: no-repeat;
@@ -563,7 +563,7 @@
       /*MAIN*/ 
 
       .main-body {
-       background-image: url(img/main320bg.png);
+       background-image: url(/MATCH/img/main320bg.png);
       }
 
       .main-container {
@@ -624,14 +624,14 @@
       }
 
       .cases-hero {
-        background-image: url(img/caseshero320.png);
+        background-image: url(/MATCH/img/caseshero320.png);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: initial;
       }
 
       .cases-hero .container {
-        background-image: url(img/WOMANVERT.png);
+        background-image: url(/MATCH/img/WOMANVERT.png);
         background-position: left center;
         background-size: initial;
         background-repeat: no-repeat;
@@ -682,7 +682,7 @@
   position: absolute;
   flex-direction: column;
   min-width: 100%;
-  background-image: url(img/menubg320.png);
+  background-image: url(/MATCH/img/menubg320.png);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: initial;
@@ -811,14 +811,14 @@ color: rgba(10, 10, 9, 0.8);
 
 @media (max-width: 370px) {
     .advert {
-        background-image: url(img/advertreversebackground.png);
+        background-image: url(/MATCH/img/advertreversebackground.png);
         background-position: 400% 60%;
         background-size: initial;
         background-repeat: no-repeat;
     }
 
     .forwomen__advert {
-        background-image: url(img/forwomanadvert320.png);
+        background-image: url(/MATCH/img/forwomanadvert320.png);
         background-position: 400% 60%;
         background-size: initial;
         background-repeat: no-repeat;
@@ -890,7 +890,7 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     .hero {
-        background-image: url(img/herovector.png);
+        background-image: url(/MATCH/img/herovector.png);
         background-size: initial;
         background-repeat: no-repeat;
         background-position: top right;
@@ -961,12 +961,12 @@ color: rgba(10, 10, 9, 0.8);
     /*main*/ 
 
     .main-body {
-        background-image: url(img/mainbg05.png);
+        background-image: url(/MATCH/img/mainbg05.png);
        background-position: center;
     }
 
     .cases-hero {
-        background-image: url(img/casesherobg.png);
+        background-image: url(/MATCH/img/casesherobg.png);
         background-position: center bottom;
     }
 
@@ -1029,7 +1029,7 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     .advert {
-        background-image: url(img/WOMANBG.png);
+        background-image: url(/MATCH/img/WOMANBG.png);
         background-position: center;
         background-size: initial;
         background-repeat: no-repeat;
@@ -1037,21 +1037,21 @@ color: rgba(10, 10, 9, 0.8);
     }
 
       .advert .container {
-        background-image: url(img/adverwoman.png);
+        background-image: url(/MATCH/img/adverwoman.png);
         background-size: initial;
         background-repeat: no-repeat;
         background-position: 5% 100%;
       }
 
      .advert .forwomen__advert--container {
-        background-image: url(img/forwomanadvertbg.png);
+        background-image: url(/MATCH/img/forwomanadvertbg.png);
         background-size: initial;
         background-repeat: no-repeat;
         background-position: 100% 90%; 
           }
 
       .forwomen__advert {
-        background-image: url(img/manstrongbg.png);
+        background-image: url(/MATCH/img/manstrongbg.png);
         background-position: center;
         background-size: initial; 
         background-repeat: no-repeat;
@@ -1130,7 +1130,7 @@ color: rgba(10, 10, 9, 0.8);
 
       .trust {
         padding: 200px 0 200px 0;
-        background-image: url(img/trsutbg.png);
+        background-image: url(/MATCH/img/trsutbg.png);
         background-position: left 30%; 
         background-size: initial;
         background-repeat: no-repeat;
@@ -1188,9 +1188,9 @@ color: rgba(10, 10, 9, 0.8);
 
       .contact {
         padding: 200px 0 200px 0;
-        background-image: url(img/CONTACR.png),
-      url(img/formbgleft.png),
-      url(img/formbgright.png);
+        background-image: url(/MATCH/img/CONTACR.png),
+      url(/MATCH/img/formbgleft.png),
+      url(/MATCH/img/formbgright.png);
     background-position: bottom center,
     0% 20%, 
     100% 40%;
@@ -1199,9 +1199,9 @@ color: rgba(10, 10, 9, 0.8);
       }
 
       .forwomen__contact {
-        background-image: url(img/CONTACR.png),
-      url(img/forwomencontactbgleft.png),
-      url(img/forwomencontactbgright.png);
+        background-image: url(/MATCH/img/CONTACR.png),
+      url(/MATCH/img/forwomencontactbgleft.png),
+      url(/MATCH/img/forwomencontactbgright.png);
     background-position: bottom center,
     0% 20%, 
     100% 40%;
@@ -1246,7 +1246,7 @@ color: rgba(10, 10, 9, 0.8);
 
       .footer {
         padding: 100px 0 300px 0;
-        background-image: url(img/MATCH.png);
+        background-image: url(/MATCH/img/MATCH.png);
         background-position: bottom;
         background-size: initial;
         background-repeat: no-repeat;
@@ -1350,7 +1350,7 @@ color: rgba(10, 10, 9, 0.8);
 /*cases.html*/ 
 
 .cases-hero .container {
-  background-image: url(img/WOMANBG.png);
+  background-image: url(/MATCH/img/WOMANBG.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: initial;
@@ -1530,7 +1530,7 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     .box-5 {
-        background-image: url(img/4.png);
+        background-image: url(/MATCH/img/4.png);
         background-repeat: no-repeat;
         background-size: initial;
         background-position: 80% 95%;
@@ -1567,7 +1567,7 @@ color: rgba(10, 10, 9, 0.8);
     /*MAIN*/ 
 
     .main-body {
-        background-image: url(img/mainbg.png);
+        background-image: url(/MATCH/img/mainbg.png);
     }
 
 } 
@@ -1593,14 +1593,14 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     .steps {
-        background-image: url(img/stepsbg.png);
+        background-image: url(/MATCH/img/stepsbg.png);
         background-position: top right;
         background-size: initial;
         background-repeat: no-repeat;
         }
 
         .forwomen__steps {
-            background-image: url(img/forwomenstepsbg.png);
+            background-image: url(/MATCH/img/forwomenstepsbg.png);
             background-position: top right;
             background-size: initial;
             background-repeat: no-repeat;
