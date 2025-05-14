@@ -751,6 +751,10 @@
     color: #801F1F;
   }
 
+  .green {
+    color: #f5f0eb; 
+  }
+
 .menu-bottom {
   justify-content: space-between;
 }
@@ -1344,6 +1348,10 @@ color: rgba(10, 10, 9, 0.8);
     .middle-link:hover {
       background-color: #1f3d32;
       color: #F5F0EB;
+    }
+
+    .green {
+      color: #1f3d32;
     }
 
     .remove-red {

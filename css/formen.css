@@ -64,6 +64,8 @@
   color: #1f3d32;
 }
 
+
+
 .menu-link {
   margin-bottom: 10px;
   font-family: var(--font-2);
@@ -72,6 +74,10 @@
   line-height: 100%;
   text-align: center;
   color: #1f3d32;
+}
+
+.red {
+  color: #801f1f;
 }
 
 .menu-bottom {
