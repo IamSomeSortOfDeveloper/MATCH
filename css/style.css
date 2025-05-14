@@ -642,7 +642,8 @@ textarea:active, textarea:focus {
   padding: 20px 32px;
   backdrop-filter: blur(50px);
   background: #f5f0eb;
-  border-radius: 70px;;
+  border-radius: 70px;
+  z-index: 5;
 }
 
 #tel {

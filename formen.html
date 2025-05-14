@@ -6,7 +6,6 @@
     <title>Match</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/Itc-custom-select.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/formen.css">
@@ -14,6 +13,7 @@
     <script src="libs/percent-preloader.js"></script> 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <link rel="stylesheet" href="libs/DynamicSelect.css" type="text/css">
 </head>
 <body>
       <div class="preloader">
@@ -316,7 +316,11 @@ VIP-знакомства
                     <form action="" method="post" class="flex">
                         <textarea placeholder="Ваше имя" name="name" id="userName" required></textarea>
                         <div class="contact__form--block">
-    
+                             <select id="country" name="country" data-placeholder="Select a country" data-dynamic-select>
+                             <option value="Russia" data-img="/MATCH/img/russia.png"></option>
+                             <option value="United Kingdom" data-img="/MATCH/img/russia.png"></option>
+                             <option value="Japan" data-img="/MATCH/img/russia.png"></option>
+                            </select>
                             <input type="tel" id="tel" required placeholder="+7 (496) 123-45-67">
                         </div>
                         <button class="contact__btn" type="submit" data-aos="zoom-in-up" data-aos-easing="ease-in-sine">Оставить заявку<svg width="24" height="24"  fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -448,6 +452,6 @@ VIP-знакомства
         </footer> 
     </main>
     <script src="js/script.js"></script>
-    <script src="libs/Itc-custom-select.js"></script>
+   <script src="libs/DynamicSelect.js"></script>
 </body>
 </html>
