@@ -77,22 +77,3 @@ accordionBtns.forEach((accordion) => {
 });
 
 
-const elements = document.querySelectorAll('.remove-black');
-
-function checkScreenWidth() {
-  for (let i = 0; i < elements.length; i++) {
-    if (window.innerWidth < 1024) {
-      elements[i].classList.remove('black', 'red');
-    } else {
-      elements[i].classList.add('black');
-    }
-  }
-}
-
-// Вызываем функцию при загрузке страницы
-checkScreenWidth();
-
-// Добавляем обработчик события resize
-window.addEventListener('resize', checkScreenWidth); 
-
-

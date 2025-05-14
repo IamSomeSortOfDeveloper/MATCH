@@ -89,13 +89,6 @@ textarea:active, textarea:focus {
     align-self: flex-end !important;
 }
 
-.red {
-  color: #801f1f !important;
-}
-
-.red:hover {
-  color: #0A0A09 !important;
-}
 
 /*preloader*/ 
 

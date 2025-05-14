@@ -564,6 +564,7 @@
 
       .main-body {
        background-image: url(/MATCH/img/main320bg.png);
+       background-color: #ffffff;
       }
 
       .main-container {
@@ -603,6 +604,14 @@
 
       .middle-link {
         color: #F5F0EB;
+      }
+
+      .remove-red {
+        color: #f5f0eb;
+      }
+      
+      .remove-black {
+        color: #f5f0eb;
       }
 
       .middle-block {
@@ -961,8 +970,12 @@ color: rgba(10, 10, 9, 0.8);
     /*main*/ 
 
     .main-body {
-        background-image: url(/MATCH/img/mainbg05.png);
-       background-position: center;
+      /*  background-image: url(/MATCH/img/mainbg05.png);
+       background-position: center; */
+         background-image: url(/img/mainwoman.png), url(/img/mainman.png);
+        background-size: initial;
+        background-position: left bottom, right bottom;
+        background-repeat: no-repeat no-repeat;
     }
 
     .cases-hero {
@@ -1328,6 +1341,24 @@ color: rgba(10, 10, 9, 0.8);
       color: #1f3d32;
     }
 
+    .middle-link:hover {
+      background-color: #1f3d32;
+      color: #F5F0EB;
+    }
+
+    .remove-red {
+      color: #801F1F;
+    }
+
+    .remove-red:hover {
+      background-color: #801F1F;
+      color: #f5f0eb;
+    }
+    
+    .remove-black {
+      color: #0a0a09;
+    }
+
     .main-header {
         font-size: 68px;
         margin-bottom: 40px;
@@ -1567,7 +1598,10 @@ color: rgba(10, 10, 9, 0.8);
     /*MAIN*/ 
 
     .main-body {
-        background-image: url(/MATCH/img/MAINBG.png);
+        background-image: url(/img/mainwoman.png), url(/img/mainman.png);
+        background-size: initial;
+        background-position: left bottom, right bottom;
+        background-repeat: no-repeat no-repeat;
     }
 
 } 
