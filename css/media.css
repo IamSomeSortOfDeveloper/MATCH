@@ -392,7 +392,7 @@
         .contact {
             padding: 100px 0 100px 0;
             background: url(img/formgbleft320.png),
-            url(/img/formbgright320.png);
+            url(img/formbgright320.png);
             background-position: left top,
             right bottom;
             background-repeat: no-repeat, no-repeat;
@@ -400,7 +400,7 @@
 
         .forwomen__contact {
             background: url(img/forwomancontactleft320.png),
-            url(/img/forwomancontactright320.png);
+            url(img/forwomancontactright320.png);
             background-position: left top,
             right bottom;
             background-repeat: no-repeat, no-repeat;
