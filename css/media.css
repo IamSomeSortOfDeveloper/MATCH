@@ -970,12 +970,8 @@ color: rgba(10, 10, 9, 0.8);
     /*main*/ 
 
     .main-body {
-      /*  background-image: url(/MATCH/img/mainbg05.png);
-       background-position: center; */
-         background-image: url(/img/mainwoman.png), url(/img/mainman.png);
-        background-size: initial;
-        background-position: left bottom, right bottom;
-        background-repeat: no-repeat no-repeat;
+      background-image: url(/MATCH/img/mainbg05.png);
+       background-position: center; 
     }
 
     .cases-hero {
@@ -1354,7 +1350,7 @@ color: rgba(10, 10, 9, 0.8);
       background-color: #801F1F;
       color: #f5f0eb;
     }
-    
+
     .remove-black {
       color: #0a0a09;
     }
@@ -1598,7 +1594,7 @@ color: rgba(10, 10, 9, 0.8);
     /*MAIN*/ 
 
     .main-body {
-        background-image: url(/img/mainwoman.png), url(/img/mainman.png);
+        background-image: url(/MATCH/img/mainwoman.png), url(/MATCH/img/mainman.png);
         background-size: initial;
         background-position: left bottom, right bottom;
         background-repeat: no-repeat no-repeat;
