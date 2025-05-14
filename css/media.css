@@ -747,6 +747,10 @@
   color: #1f3d32;
 }
 
+  .red {
+    color: #801F1F;
+  }
+
 .menu-bottom {
   justify-content: space-between;
 }
