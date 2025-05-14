@@ -1049,3 +1049,18 @@ line-height: 120%;
 color: rgba(10, 10, 9, 0.5);
 padding-top: 10px;
 }
+
+/*select*/ 
+
+.itc-select {
+  max-width: 56px;
+  background: transparent;
+  border: none;
+}
+
+.itc-select__toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  height: 24px;
+}
