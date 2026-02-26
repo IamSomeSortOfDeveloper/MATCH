@@ -1,0 +1,38 @@
+# Node dependencies
+node_modules/
+studio/node_modules/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sanity Studio / build output
+.sanity/
+dist/
+build/
+.cache/
+studio/.sanity/
+studio/dist/
+studio/build/
+studio/.cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Optional lockfiles (uncomment if you do not want to track lockfiles)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+studio/package-lock.json
+studio/yarn.lock
+studio/pnpm-lock.yaml
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
