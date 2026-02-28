@@ -99,7 +99,7 @@ textarea:active, textarea:focus {
 
 .header {
     padding-top: 32px;
-    background-image: url(/MATCH/img/herobg.png);
+    background-image: url(../img/herobg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -225,21 +225,21 @@ textarea:active, textarea:focus {
 }
 
 .bg--1 {
-    background-image: url(/MATCH/img/womanman.png);
+    background-image: url(../img/womanman.png);
     background-size: initial;
     background-repeat: no-repeat;
     background-position: top right;
 }
 
 .bg--2 {
-    background-image: url(/MATCH/img/clock.png);
+    background-image: url(../img/clock.png);
     background-size: initial;
     background-repeat: no-repeat;
     background-position: top right;
 }
 
 .bg--3 {
-    background-image: url(/MATCH/img/planetbg.png);
+    background-image: url(../img/planetbg.png);
     background-size: initial;
     background-repeat: no-repeat;
     background-position: top right;
@@ -371,19 +371,19 @@ textarea:active, textarea:focus {
   }
 
   .cards__bg--1 {
-    background-image: url(/MATCH/img/cardsbg1.png);
+    background-image: url(../img/cardsbg1.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .cards__bg--2 {
-    background-image: url(/MATCH/img/cardsbg2.png);
+    background-image: url(../img/cardsbg2.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .cards__bg--3 {
-    background-image: url(/MATCH/img/cardsbg3.png);
+    background-image: url(../img/cardsbg3.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -502,7 +502,7 @@ textarea:active, textarea:focus {
   }
 
   .services__bg--1 {
-    background-image: url(/MATCH/img/servcieswmbg.png);
+    background-image: url(../img/servcieswmbg.png);
     background-position: bottom center;
     background-size: initial;
     background-repeat: no-repeat;
@@ -510,7 +510,7 @@ textarea:active, textarea:focus {
   }
 
   .services__bg--2 {
-    background-image: url(/MATCH/img/servicesbgplanet.png);
+    background-image: url(../img/servicesbgplanet.png);
     background-position: bottom center;
     background-size: initial;
     background-repeat: no-repeat;
@@ -518,7 +518,7 @@ textarea:active, textarea:focus {
   }
 
   .services__bg--3 {
-    background-image: url(/MATCH/img/servicescrownbg.png);
+    background-image: url(../img/servicescrownbg.png);
     background-position: bottom center;
     background-size: initial;
     background-repeat: no-repeat;
@@ -762,7 +762,7 @@ textarea:active, textarea:focus {
 
 .main-body {
   min-height: 100vh;
-  background-image: url(/MATCH/img/mainbg.png);
+  background-image: url(../img/mainbg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -917,26 +917,26 @@ color: #1F3D32;
 /*forwomen hmtl*/ 
 
 .forwomen__header {
-  background-image: url(/MATCH/img/forwomanheaderbg.png);
+  background-image: url(../img/forwomanheaderbg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .forwomen__cards--bg-1 {
-  background-image: url(/MATCH/img/forwomencards1.png);
+  background-image: url(../img/forwomencards1.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .forwomen__cards--bg-2 {
-  background-image: url(/MATCH/img/forwomencards2.png);
+  background-image: url(../img/forwomencards2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .forwomen__cards--bg-3 {
-  background-image: url(/MATCH/img/forwomencards3.png);
+  background-image: url(../img/forwomencards3.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
