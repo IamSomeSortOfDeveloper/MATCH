@@ -726,6 +726,11 @@ textarea:active, textarea:focus {
   flex-direction: column;
 }
 
+.privacy-back-btn {
+  align-self: flex-start;
+  margin-bottom: 32px;
+}
+
 .FAQ__list {
   max-width: 1057px;
 }
@@ -762,12 +767,27 @@ textarea:active, textarea:focus {
 
 .main-body {
   min-height: 100vh;
-  background-image: url(../img/mainbg.png);
+  background-image: url("../img/image.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   max-width: 1540px;
   margin: 0 auto;
+}
+
+.landing-page {
+  max-width: none;
+  margin: 0;
+  padding: 12px;
+  overflow: hidden;
+  background-color: #191715;
+  background-image:
+    linear-gradient(90deg, rgba(20, 16, 13, 0.28) 0%, rgba(20, 16, 13, 0.08) 22%, rgba(20, 16, 13, 0.08) 78%, rgba(20, 16, 13, 0.28) 100%),
+    linear-gradient(180deg, rgba(16, 13, 11, 0.16) 0%, rgba(16, 13, 11, 0.04) 38%, rgba(16, 13, 11, 0.18) 100%),
+    url("../img/image.png");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat;
+  background-position: center center, center center, center 24%;
 }
 
 .main-container {
@@ -779,6 +799,33 @@ textarea:active, textarea:focus {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: repeat(8, 1fr);
+}
+
+.landing-page .main-container {
+  position: relative;
+  max-width: 100%;
+  min-height: calc(100vh - 24px);
+  border: 1px solid rgba(245, 240, 235, 0.08);
+  overflow: hidden;
+}
+
+.landing-page .match-menu-top .header__logo,
+.landing-page .match-menu-top .header__link--contacts {
+  color: #0a0a09;
+}
+
+.landing-page .match-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  min-width: 100vw;
+  overflow-y: auto;
+  z-index: 1000;
 }
 
 
@@ -808,11 +855,13 @@ textarea:active, textarea:focus {
   grid-column: 3/7;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-header {
   max-width: 655px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   display: grid;
   grid-template-rows: auto auto auto;
   font-family: var(--font-4); 
@@ -837,6 +886,7 @@ textarea:active, textarea:focus {
 
 .middle-block {
   display: flex;
+  gap: 12px;
 }
 
 .middle-link {
@@ -855,7 +905,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 100%;
 text-align: center;
-color: #1F3D32;
+color: #f5f0eb;
  transition: all 0.3s ease-in-out;
 }
 
@@ -892,12 +942,14 @@ color: #1F3D32;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 8px;
 }
 
 .main-bottom-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 8px;
 }
 
 .bottom__link--big {

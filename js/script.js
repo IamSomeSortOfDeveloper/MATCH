@@ -2,32 +2,23 @@ AOS.init();
 
 let burger = document.querySelector('.header__burger');
 let menu = document.querySelector('.match-menu');
-let links = document.querySelectorAll('.header__link');
+let menuLinks = document.querySelectorAll('.match-menu a');
 
-burger.addEventListener('click',
-
-    function()
-
-    {
+if (burger && menu) {
+    burger.addEventListener('click', function() {
         burger.classList.toggle('header__burger--active');
-
         menu.classList.toggle('match-menu--active');
-
         document.body.classList.toggle('stop--scroll');
+    });
 
-
-    }
-)
-
-links.forEach(function(el) {
-    el.addEventListener('click', function() {
-        burger.classList.remove('header__burger--active');
-
-        menu.classList.remove('header__nav--active');
-
-        document.body.classList.remove('stop--scroll');
-    })
-})
+    menuLinks.forEach(function(el) {
+        el.addEventListener('click', function() {
+            burger.classList.remove('header__burger--active');
+            menu.classList.remove('match-menu--active');
+            document.body.classList.remove('stop--scroll');
+        });
+    });
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     const hoverButton = document.getElementById('bg-left');
@@ -75,5 +66,4 @@ accordionBtns.forEach((accordion) => {
     }
   };
 });
-
 

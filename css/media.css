@@ -562,14 +562,13 @@
 
       /*MAIN*/ 
 
-      .main-body {
-       background-image: url(../img/main320bg.png);
-       background-color: #ffffff;
-      }
-
       .main-container {
         grid-template-rows: auto auto;
         padding: 40px 20px;
+      }
+
+      .landing-page .main-container {
+        min-height: calc(100vh - 12px);
       }
 
       .main-container .match-menu {
@@ -592,6 +591,7 @@
         font-size: 40px;
         margin-bottom: 20px;
         text-align: left;
+        max-width: 360px;
       }
 
       
@@ -826,7 +826,7 @@ color: rgba(10, 10, 9, 0.8);
 
     }
 
-@media (max-width: 370px) {
+@media (max-width: 767px) {
     .advert {
         background-image: url(../img/advertreversebackground.png);
         background-position: 400% 60%;
@@ -839,6 +839,20 @@ color: rgba(10, 10, 9, 0.8);
         background-position: 400% 60%;
         background-size: initial;
         background-repeat: no-repeat;
+    }
+
+    /*MAIN*/
+
+    .landing-page {
+       padding: 6px;
+       background-image:
+        linear-gradient(180deg, rgba(16, 13, 11, 0.18) 0%, rgba(16, 13, 11, 0.05) 42%, rgba(16, 13, 11, 0.22) 100%),
+        linear-gradient(90deg, rgba(20, 16, 13, 0.14) 0%, rgba(20, 16, 13, 0.02) 100%),
+        url("../img/main-mobile.png");
+       background-size: cover, cover, cover;
+       background-position: center center, center center, center top;
+       background-repeat: no-repeat;
+       background-color: #191715;
     }
 
     /*cases.html*/ 
@@ -976,11 +990,6 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     /*main*/ 
-
-    .main-body {
-      background-image: url(../img/mainbg05.png);
-       background-position: center; 
-    }
 
     .cases-hero {
         background-image: url(../img/casesherobg.png);
@@ -1324,6 +1333,10 @@ color: rgba(10, 10, 9, 0.8);
         grid-template-rows: auto auto auto;
     }
 
+    .landing-page {
+      background-position: center center, center center, center 18%;
+    }
+
     .main-container .match-menu {
       padding: 20px 60px 32px 60px;
     }
@@ -1342,20 +1355,7 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     .middle-link {
-      color: #1f3d32;
-    }
-
-    .middle-link:hover {
-      background-color: #1f3d32;
-      color: #F5F0EB;
-    }
-
-    .green {
-      color: #1f3d32;
-    }
-
-    .remove-red {
-      color: #801F1F;
+      color: #f5f0eb;
     }
 
     .remove-red:hover {
@@ -1364,13 +1364,14 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     .remove-black {
-      color: #0a0a09;
+      color: #f5f0eb;
     }
 
     .main-header {
         font-size: 68px;
         margin-bottom: 40px;
         text-align: center;
+        max-width: 760px;
     }
 
 
@@ -1604,13 +1605,6 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     /*MAIN*/ 
-
-    .main-body {
-        background-image: url(../img/mainwoman.png), url(../img/mainman.png);
-        background-size: initial;
-        background-position: left bottom, right bottom;
-        background-repeat: no-repeat no-repeat;
-    }
 
 } 
 
