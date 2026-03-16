@@ -117,6 +117,7 @@ textarea:active, textarea:focus {
     gap: 4px;
     width: 48px;
     height: 48px;
+    border: none;
     border-radius: 50%;
     background-color: #faf8f5;
     position: relative; 
@@ -767,7 +768,7 @@ textarea:active, textarea:focus {
 
 .main-body {
   min-height: 100vh;
-  background-image: url("../img/image.png");
+  background-image: url("../img/main-page.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -781,13 +782,10 @@ textarea:active, textarea:focus {
   padding: 12px;
   overflow: hidden;
   background-color: #191715;
-  background-image:
-    linear-gradient(90deg, rgba(20, 16, 13, 0.28) 0%, rgba(20, 16, 13, 0.08) 22%, rgba(20, 16, 13, 0.08) 78%, rgba(20, 16, 13, 0.28) 100%),
-    linear-gradient(180deg, rgba(16, 13, 11, 0.16) 0%, rgba(16, 13, 11, 0.04) 38%, rgba(16, 13, 11, 0.18) 100%),
-    url("../img/image.png");
-  background-size: cover, cover, cover;
+  background-image: url("../img/main-page.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center, center center, center 24%;
+  background-position: center 24%;
 }
 
 .main-container {
@@ -811,6 +809,13 @@ textarea:active, textarea:focus {
 
 .landing-page .match-menu-top .header__logo,
 .landing-page .match-menu-top .header__link--contacts {
+  color: #0a0a09;
+}
+
+.landing-page .top .header__logo,
+.landing-page .top .header__link--contacts,
+.landing-page .main-header,
+.landing-page .remove-black {
   color: #0a0a09;
 }
 
@@ -909,9 +914,33 @@ color: #f5f0eb;
  transition: all 0.3s ease-in-out;
 }
 
+.landing-page .middle-link.remove-red {
+  color: #801f1f;
+  border-color: rgba(128, 31, 31, 0.2);
+  background: rgba(92, 88, 86, 0.38);
+}
+
+.landing-page .middle-link.green {
+  color: #1f3d32;
+  border-color: rgba(31, 61, 50, 0.2);
+  background: rgba(92, 88, 86, 0.38);
+}
+
 .middle-link:hover {
   background-color: #f5f0eb;
   color: #0a0a09;
+}
+
+.landing-page .middle-link.remove-red:hover {
+  background-color: #801f1f;
+  border-color: #801f1f;
+  color: #f5f0eb;
+}
+
+.landing-page .middle-link.green:hover {
+  background-color: #1f3d32;
+  border-color: #1f3d32;
+  color: #f5f0eb;
 }
 
 .fade-in-left {

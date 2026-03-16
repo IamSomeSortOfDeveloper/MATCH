@@ -585,13 +585,19 @@
       .top .header__link--contacts {
         display: none;
         overflow: hidden;
+        color: #f5f0eb;
       }
 
-      .main-header {
+      .top .header__logo {
+        color: #f5f0eb;
+      }
+
+      .landing-page .main-header {
         font-size: 40px;
         margin-bottom: 20px;
         text-align: left;
         max-width: 360px;
+        color: #f5f0eb;
       }
 
       
@@ -603,14 +609,25 @@
       }
 
       .middle-link {
-        color: #F5F0EB;
+        color: #f5f0eb;
+        border-width: 1px;
+        border-color: #f5f0eb;
+        background: rgba(245, 240, 235, 0.05);
       }
 
-      .remove-red {
+      .landing-page .middle-link.remove-red {
         color: #f5f0eb;
+        border-color: #f5f0eb;
+        background: rgba(92, 88, 86, 0.38);
+      }
+
+      .landing-page .middle-link.green {
+        color: #f5f0eb;
+        border-color: #f5f0eb;
+        background: rgba(92, 88, 86, 0.38);
       }
       
-      .remove-black {
+      .landing-page .remove-black {
         color: #f5f0eb;
       }
 
@@ -845,12 +862,9 @@ color: rgba(10, 10, 9, 0.8);
 
     .landing-page {
        padding: 6px;
-       background-image:
-        linear-gradient(180deg, rgba(16, 13, 11, 0.18) 0%, rgba(16, 13, 11, 0.05) 42%, rgba(16, 13, 11, 0.22) 100%),
-        linear-gradient(90deg, rgba(20, 16, 13, 0.14) 0%, rgba(20, 16, 13, 0.02) 100%),
-        url("../img/main-mobile.png");
-       background-size: cover, cover, cover;
-       background-position: center center, center center, center top;
+       background-image: url("../img/main-page-mobile.png");
+       background-size: contain;
+       background-position: center top;
        background-repeat: no-repeat;
        background-color: #191715;
     }
@@ -861,8 +875,27 @@ color: rgba(10, 10, 9, 0.8);
 
 }
 
+@media (max-width: 450px) {
+    .landing-page {
+       background-size: 100% 100%;
+       background-position: center top;
+    }
+}
+
+@media (min-width: 449px) and (max-width: 576px) {
+    .landing-page {
+       background-size: cover;
+       background-position: center 8%;
+    }
+}
 
 @media (min-width: 576px) {
+
+    .landing-page {
+        background-size: cover;
+        background-position: center 10%;
+    }
+
 
     .header__nav {
         flex-direction: row;
@@ -911,6 +944,11 @@ color: rgba(10, 10, 9, 0.8);
 }
 
 @media (min-width: 768px) {
+
+    .landing-page {
+        background-size: cover;
+        background-position: center 16%;
+    }
 
     .header {
         margin-bottom: 100px;
@@ -1334,7 +1372,7 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     .landing-page {
-      background-position: center center, center center, center 18%;
+      background-position: center 18%;
     }
 
     .main-container .match-menu {
@@ -1358,20 +1396,39 @@ color: rgba(10, 10, 9, 0.8);
       color: #f5f0eb;
     }
 
+    .landing-page .middle-link.remove-red {
+      color: #801f1f;
+      border-color: rgba(128, 31, 31, 0.2);
+      background: rgba(92, 88, 86, 0.38);
+    }
+
+    .landing-page .middle-link.green {
+      color: #1f3d32;
+      border-color: rgba(31, 61, 50, 0.2);
+      background: rgba(92, 88, 86, 0.38);
+    }
+
     .remove-red:hover {
       background-color: #801F1F;
       color: #f5f0eb;
     }
 
-    .remove-black {
+    .landing-page .middle-link.green:hover {
+      background-color: #1f3d32;
+      border-color: #1f3d32;
       color: #f5f0eb;
     }
 
-    .main-header {
+    .landing-page .remove-black {
+      color: #0a0a09;
+    }
+
+    .landing-page .main-header {
         font-size: 68px;
         margin-bottom: 40px;
         text-align: center;
         max-width: 760px;
+        color: #0a0a09;
     }
 
 
@@ -1606,6 +1663,10 @@ color: rgba(10, 10, 9, 0.8);
 
     /*MAIN*/ 
 
+    .landing-page {
+        background-position: center 14%;
+    }
+
 } 
 
 @media (min-width: 1320px) {
@@ -1667,6 +1728,10 @@ color: rgba(10, 10, 9, 0.8);
     }
 
     @media (min-width: 1540px) {
+      .landing-page {
+        background-position: center 10%;
+      }
+
       /*  .case .case1-container {
         background-image: url(../img/case1.png);
         background-position: left bottom;
