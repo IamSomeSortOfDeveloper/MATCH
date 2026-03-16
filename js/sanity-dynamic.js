@@ -11,24 +11,34 @@ function getSlugFromUrl() {
     if (slugParam) return slugParam;
   }
 
-  const path = window.location.pathname;
-  if (path === '/') return null;
+  const segments = window.location.pathname.split('/').filter(Boolean);
+  if (segments.length === 0) return null;
 
-  const segments = path.split('/').filter(Boolean);
-  const lastSegment = segments.pop() || '';
+  const guideIndex = segments.findIndex(segment => segment.replace(/\.html$/i, '') === 'guide');
+  if (guideIndex !== -1) {
+    const guideSlug = normalizeSlug(segments[guideIndex + 1]);
+    if (guideSlug) return guideSlug;
+  }
+
+  const lastSegment = segments[segments.length - 1] || '';
   const pageName = lastSegment.replace(/\.html$/i, '');
 
   if (!pageName || pageName === 'dynamic' || pageName === 'guide' || pageName === 'index') {
     return null;
   }
 
-  return pageName;
+  return normalizeSlug(pageName);
 }
 
 function normalizeSlug(value) {
   const raw = (value || '').trim();
   if (!raw) return '';
-  return raw.replace(/^\{+|\}+$/g, '').trim();
+  return raw.replace(/^["'{]+|["'}]+$/g, '').trim();
+}
+
+function buildGuideUrl(slug) {
+  const normalizedSlug = normalizeSlug(slug);
+  return normalizedSlug ? `/guide/${encodeURIComponent(normalizedSlug)}` : '/guide/';
 }
 
 function showMessage(message) {
@@ -253,7 +263,7 @@ function renderContentBlocks(blocks) {
       case 'internallink':
         if (block.links && block.links.length > 0) {
           const linkListHTML = block.links.map(l => `
-            <a href="${l.slug?.current ? `guide.html?slug=${encodeURIComponent(l.slug.current)}` : '#'}" class="sanity-link-item">${l.title || ''}</a>
+            <a href="${l.slug?.current ? buildGuideUrl(l.slug.current) : '#'}" class="sanity-link-item">${l.title || ''}</a>
           `).join('');
           blockHtml = `
             <section class="sanity-section">
